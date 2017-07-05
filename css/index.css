@@ -1,0 +1,11 @@
+.sticker{
+  background-color: lightblue;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.sticker p{
+  text-align: center;
+}
