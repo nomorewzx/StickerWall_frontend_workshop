@@ -2,14 +2,28 @@
 <html>
   <head>
     <link rel ="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src ="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js">
+    </script>
+    <script>
+    $(document).ready(function(){
+      $("#add-sticker").click(function(){
+        $(".sticker-container").append("<div class=\"sticker\"><p>This is my sticker</p></div>");
+      });
+    });
+    </script>
       <title>Sticker Wall</title>
   </head>
   <body>
     <div>
       <h1>This is your sticker!!!</h1>
     </div>
-    <div class ="sticker">
-      <p>This is my first sticker</p>
+    <div class="button">
+      <input type="button" id="add-sticker" value="Add sticker">
+    </div>
+    <div class="sticker-container">
+      <div class ="sticker">
+        <p>This is my first sticker</p>
+      </div>
     </div>
   </body>
 </html>
